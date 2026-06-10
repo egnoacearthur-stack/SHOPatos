@@ -1,0 +1,2175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SHOPatos.com</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <section id="rate-us">
+            <div class="rate-us-pls" onclick="window.location.href='/ratings/rating.html';">
+                <h3>Rate Us! <i class='bx bxs-star' ></i></h3>
+            </div>
+        </section>
+
+        <section id="header">
+            <a href="Index.html" id="logo_link"><img src="Assets/logo white.png" alt=""></a>
+            <div>
+                <ul id="navbar">
+                    <li><a href="Index.html"><span>Home</span></a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Shop</i></button>
+                            <div class="dropdown-content">
+                                <a href="shop.html">All Shoes</a>
+                                <a href="/categories/running_shoes.html">Running Shoes</a>
+                                <a href="/categories/training_shoes.html">Training Shoes</a>
+                                <a href="/categories/court_shoes.html">Court Shoes</a>
+                                <a href="/categories/lifestyle_shoes.html">Lifestyle Shoes</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Trends</button>
+                            <div class="dropdown-content">
+                                <a href="trends.html">All Trends</a>
+                                <a href="/trends/best_seller.html">Best Seller</a>
+                                <a href="/trends/limited_edition.html">Limited Edition</a>
+                                <a href="/trends/sale.html">Sale</a>
+                                <a href="/trends/budget_friendly.html">Budget Friendly</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="brands.html" class="active">Brands<button class="dropbtn"></button></a>
+                            <div class="dropdown-content">
+                                <a href="brands.html">All Brands</a><br>
+                                <a href="/brands/nike.html">Nike</a><br>
+                                <a href="/brands/adidas.html">Adidas</a><br>
+                                <a href="/brands/puma.html">Puma &nbsp</a><br>
+                                <a href="/brands/anta.html">Anta</a><br>
+                                <a href="/brands/converse.html">Converse</a> <br>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="about.html"><span>About</span></a></li>
+                    <li><a href="contact.html"><span>Contact</span></a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><i class='bx bx-user-circle'></i></button>
+                            <div class="dropdown-content">
+                                <a href="/dashboard/index.html">Dashboard</a>
+                                <a href="login_registration/login.html">Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><i class='bx bx-cart-alt' id="cart-icon"></i>
+                        <span id="cart-count">0</span>
+                    </li>
+
+                    <div class="cart-mainbox">
+
+                        <h2 class="cart-title">Your Cart</h2>
+
+                        <div class="cart-content">
+                            
+                        </div>
+
+                        <div class="sticky-footer">
+                            <div class="total">
+                                <div class="total-title">Total</div>
+                                <div class="total-price">₱0</div>
+                            </div>
+
+                            <button type="button" class="btn-buy">Buy Now</button>
+
+                        </div>
+
+                        <i class='bx bx-x-circle' id="close-cart"></i>
+
+                    </div>
+
+                    <a href="#" id="close"><i class='bx bx-x'></i></a>
+                </ul>   
+            </div>
+
+            <div id="mobile">
+                <div><i id="bar" class='bx bx-menu'></i></div>
+            </div>
+
+        </section>
+
+        <div class="searchbar">
+            <input type="text" id="searchInput" placeholder="Search">
+            <button><i class='bx bx-search-alt-2'></i></button>
+            <div id="resultBox" class="result-box"></div>
+        </div>
+
+        <section id="page-header">
+            
+            <h2>Brands</h2>
+            
+        </section>
+
+        <section id="product1" class="section-p1">
+            <h2>NIKE</h2>
+            <p><a href="/brands/nike.html">View All</a></p>  
+            <div class="scrollmenu">
+                <div class="pro-container">
+                    
+                    <button id="myBtn">
+                        <div class="pro" >
+                        <img class="product-img" src="/Assets/Court Shoes/Nike/Images/LEBRON XXI EP.jpg.png" alt="" onclick="openModal('myModal1');">
+                        <div class="des" onclick="openModal('myModal1');">
+                            <span>NIKE</span>
+                            <h5 class="product-title" >Lebron 21</h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h4 class="price" >₱11295.00</h4>
+                        </div>
+                            <i class='bx bx-cart-add cart'></i>
+                        </div>
+                    </button>
+
+                    <button id="myBtn">
+                        <div class="pro" >
+                        <img class="product-img" src="/Assets/Court Shoes/Nike/Images/KD 17 ORANGE.jpg.png" alt="" onclick="openModal('myModal2');">
+                        <div class="des" onclick="openModal('myModal2');">
+                            <span>NIKE</span>
+                            <h5 class="product-title" >KD 17</h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h4 class="price" >₱8895.00</h4>
+                        </div>
+                            <i class='bx bx-cart-add cart'></i>
+                        </div>
+                    </button>
+
+                    <button id="myBtn">
+                        <div class="pro" >
+                        <img class="product-img" src="/Assets/Court Shoes/Nike/Images/KOBE PROTRO 8 COURT PURPLE.jpg.png" alt="" onclick="openModal('myModal3');">
+                        <div class="des" onclick="openModal('myModal3');">
+                            <span>NIKE</span>
+                            <h5 class="product-title" >Kobe 8 Protro</h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h4 class="price" >₱9895.00</h4>
+                        </div>
+                            <i class='bx bx-cart-add cart'></i>
+                        </div>
+                    </button>
+
+                    <button id="myBtn">
+                        <div class="pro" >
+                        <img class="product-img" src="/Assets/Lifestyle Shoes/Images/nike/zoom-vomero-5-se-shoes-WWDBV1.png" alt="" onclick="openModal('myModal4');">
+                        <div class="des" onclick="openModal('myModal4');">
+                            <span>NIKE</span>
+                            <h5 class="product-title" >Nike Zoom Vomero 5 SE</h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h4 class="price" >₱8895.00</h4>
+                        </div>
+                            <i class='bx bx-cart-add cart'></i>
+                        </div>
+                    </button>
+
+                    <button id="myBtn">
+                        <div class="pro" >
+                        <img class="product-img" src="/Assets/Lifestyle Shoes/Images/nike/air-force-1-07-lv8-shoes-chrS2D.png" alt="" onclick="openModal('myModal5');">
+                        <div class="des" onclick="openModal('myModal5');">
+                            <span>NIKE</span>
+                            <h5 class="product-title" >Nike Air Force 1 '07 LV8</h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h4 class="price" >₱6895.00</h4>
+                        </div>
+                            <i class='bx bx-cart-add cart'></i>
+                        </div>
+                    </button>
+
+                    <button id="myBtn">
+                        <div class="pro" >
+                        <img class="product-img" src="/Assets/Lifestyle Shoes/Images/nike/dunk-low-retro-shoe-66RGqF.png" alt="" onclick="openModal('myModal6');">
+                        <div class="des" onclick="openModal('myModal6');">
+                            <span>NIKE</span>
+                            <h5 class="product-title" >Nike Dunk Low Retro</h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h4 class="price" >₱5495.00</h4>
+                        </div>
+                            <i class='bx bx-cart-add cart'></i>
+                        </div>
+                    </button>
+
+                    <button id="myBtn">
+                        <div class="pro" >
+                        <img class="product-img" src="/Assets/Running Shoes/Nike/Images/Nike Pegasus 41 (White-Dusty Cactus-Glacier Blue-Black).jpg.png" alt="" onclick="openModal('myModal7');">
+                        <div class="des" onclick="openModal('myModal7');">
+                            <span>NIKE</span>
+                            <h5 class="product-title" >Nike Pegasus 41</h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h4 class="price" >₱7395.00</h4>
+                        </div>
+                            <i class='bx bx-cart-add cart'></i>
+                        </div>
+                    </button>
+
+                    <button id="myBtn">
+                        <div class="pro" >
+                        <img class="product-img" src="/Assets/Running Shoes/Nike/Images/Nike Vaporfly 3 (Black-Black-Oatmeal-Metallic Gold Grain).png" alt="" onclick="openModal('myModal8');">
+                        <div class="des" onclick="openModal('myModal8');">
+                            <span>NIKE</span>
+                            <h5 class="product-title" >Nike Vaporfly 3</h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h4 class="price" >₱11995.00</h4>
+                        </div>
+                            <i class='bx bx-cart-add cart'></i>
+                        </div>
+                    </button>
+
+                    <button id="myBtn">
+                        <div class="pro" >
+                        <img class="product-img" src="/Assets/Training Shoes/Nike/Images/Nike Metcon 9 AMP.png" alt="" onclick="openModal('myModal9');">
+                        <div class="des" onclick="openModal('myModal9');">
+                            <span>NIKE</span>
+                            <h5 class="product-title" >Nike Metcon 9 AMP </h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h4 class="price" >₱7895.00</h4>
+                        </div>
+                            <i class='bx bx-cart-add cart'></i>
+                        </div>
+                    </button>
+
+                    <button id="myBtn">
+                        <div class="pro" >
+                        <img class="product-img" src="/Assets/Training Shoes/Nike/Images/Nike Free Metcon 5.png" alt="" onclick="openModal('myModal10');">
+                        <div class="des" onclick="openModal('myModal10');">
+                            <span>NIKE</span>
+                            <h5 class="product-title" >Nike Free Metcon 5</h5>
+                            <div class="star">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h4 class="price" >₱6895.00</h4>
+                        </div>
+                            <i class='bx bx-cart-add cart'></i>
+                        </div>
+                    </button>
+                    
+                </div>
+            </div>    
+
+            <div id="adidas" class="space">
+                <h2>ADIDAS</h2>
+                <p><a href="/brands/adidas.html">View All</a></p> 
+                <div class="scrollmenu">
+                    <div class="pro-container">
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Court Shoes/Adidas/Images/AE 1 white.jpg.png" alt="" onclick="openModal('myModal11');">
+                            <div class="des" onclick="openModal('myModal11');">
+                                <span>ADIDAS</span>
+                                <h5 class="product-title" >AE 1</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱5900.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Court Shoes/Adidas/Images/Harden 7 blue.jpg.png" alt="" onclick="openModal('myModal12');">
+                            <div class="des" onclick="openModal('myModal12');">
+                                <span>ADIDAS</span>
+                                <h5 class="product-title" >Harden Volume 7</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱9000.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Court Shoes/Adidas/Images/TRAE brown.jpg.png" alt="" onclick="openModal('myModal13');">
+                            <div class="des" onclick="openModal('myModal13');">
+                                <span>ADIDAS</span>
+                                <h5 class="product-title" >Trae young 3</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱9000.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Lifestyle Shoes/Images/adidas/Samba_OG_Shoes_Black_B75807_06_standard.png" alt="" onclick="openModal('myModal14');">
+                            <div class="des" onclick="openModal('myModal14');">
+                                <span>ADIDAS</span>
+                                <h5 class="product-title" >SAMBA OG SHOES</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱6800.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Lifestyle Shoes/Images/adidas/Advantage_Base_2.0_Shoes_White_IG9189_06_standard.png" alt="" onclick="openModal('myModal15');">
+                            <div class="des" onclick="openModal('myModal15');">
+                                <span>ADIDAS</span>
+                                <h5 class="product-title" >ADVANTAGE BASE 2.0 SHOES</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱3300.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Lifestyle Shoes/Images/adidas/Run_60s_3.0_Shoes_White_IE3830_06_standard.png" alt="" onclick="openModal('myModal16');">
+                            <div class="des" onclick="openModal('myModal16');">
+                                <span>ADIDAS</span>
+                                <h5 class="product-title" >RUN 60S 3.0 SHOES</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱3000.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Running Shoes/Adidas/Images/Adizero_Boston_12_Shoes_Blue.png" alt="" onclick="openModal('myModal17');">
+                            <div class="des" onclick="openModal('myModal17');">
+                                <span>ADIDAS</span>
+                                <h5 class="product-title" >ADIZERO BOSTON 12 SHOES</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱8000.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Running Shoes/Adidas/Images/Duramo_Speed_Shoes_Red.png" alt="" onclick="openModal('myModal18');">
+                            <div class="des" onclick="openModal('myModal18');">
+                                <span>ADIDAS</span>
+                                <h5 class="product-title" >DURAMO SPEED SHOES</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱4500.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Training Shoes/Adidas/Images/RAPIDMOVE ADV TRAINER.png" alt="" onclick="openModal('myModal19');">
+                            <div class="des" onclick="openModal('myModal19');">
+                                <span>ADIDAS</span>
+                                <h5 class="product-title" >RAPIDMOVE ADV TRAINER</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱6000.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Training Shoes/Adidas/Images/STRUTTER SHOES.png" alt="" onclick="openModal('myModal20');">
+                            <div class="des" onclick="openModal('myModal20');">
+                                <span>ADIDAS</span>
+                                <h5 class="product-title" >STRUTTER SHOES</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱3500.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="puma" class="space">
+                <h2>PUMA</h2>
+                <p><a href="/brands/puma.html">View All</a></p>  
+                <div class="scrollmenu">
+                    <div class="pro-container">
+                        
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Court Shoes/PUMA/Images/MELO 1.png" alt="" onclick="openModal('myModal21');">
+                            <div class="des" onclick="openModal('myModal21');">
+                                <span>PUMA</span>
+                                <h5 class="product-title" >MB1</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱7042.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+    
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Court Shoes/PUMA/Images/Schroder.png" alt="" onclick="openModal('myModal22');">
+                            <div class="des" onclick="openModal('myModal22');">
+                                <span>PUMA</span>
+                                <h5 class="product-title" >SCHRODER ALL PRO NITRO M</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱8800.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+    
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Court Shoes/PUMA/Images/Rj BARRET.png" alt="" onclick="openModal('myModal23');">
+                            <div class="des" onclick="openModal('myModal23');">
+                                <span>PUMA</span>
+                                <h5 class="product-title" >ALL-PRO NITRO RJ BARRET</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱8200.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+    
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Lifestyle Shoes/Images/puma/Easy-Rider-Vintage-Sneakers.png" alt="" onclick="openModal('myModal24');">
+                            <div class="des" onclick="openModal('myModal24');">
+                                <span>PUMA</span>
+                                <h5 class="product-title" >Easy Rider Vintage Sneakers</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱6500.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+    
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Lifestyle Shoes/Images/puma/RBD-Game-Low-Sneakers.png" alt="" onclick="openModal('myModal25');">
+                            <div class="des" onclick="openModal('myModal25');">
+                                <span>PUMA</span>
+                                <h5 class="product-title" >RBD Game Low Sneakers</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱2700.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+    
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Lifestyle Shoes/Images/puma/Palermo-Leather-Sneakers-Unisex.png" alt="" onclick="openModal('myModal26');">
+                            <div class="des" onclick="openModal('myModal26');">
+                                <span>PUMA</span>
+                                <h5 class="product-title" >Palermo Leather Sneakers Unisex</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱6000.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+    
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Running Shoes/PUMA/Images/ForeverRun-NITRO-Running-Shoes-_Cherry-Tomato-PUMA-Black.png" alt="" onclick="openModal('myModal27');">
+                            <div class="des" onclick="openModal('myModal27');">
+                                <span>PUMA</span>
+                                <h5 class="product-title" >ForeverRun NITRO Running Shoes</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱6240.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+    
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Running Shoes/PUMA/Images/Deviate-NITRO™-2-Men_s-Running-Shoes-_Neon-Citrus.png" alt="" onclick="openModal('myModal28');">
+                            <div class="des" onclick="openModal('myModal28');">
+                                <span>PUMA</span>
+                                <h5 class="product-title" >Deviate NITRO 2 Running Shoes</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱8800..00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+    
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Training Shoes/PUMA/Images/Puma Pure XT Moto.png" alt="" onclick="openModal('myModal29');">
+                            <div class="des" onclick="openModal('myModal29');">
+                                <span>PUMA</span>
+                                <h5 class="product-title" >Pure XT Moto</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱3000.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+    
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Training Shoes/PUMA/Images/Puma PWRFrame TR 2 Elektro Summer.png" alt="" onclick="openModal('myModal30');">
+                            <div class="des" onclick="openModal('myModal30');">
+                                <span>PUMA</span>
+                                <h5 class="product-title" >PWRFrame TR 2</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱3790.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+                        
+                    </div>
+                </div>   
+            </div>
+
+            <div id="anta" class="space">
+                <h2>ANTA</h2>
+                <p><a href="/brands/anta.html">View All</a></p> 
+                <div class="scrollmenu">
+                    <div class="pro-container">
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Court Shoes/Anta/Images/KAI WHITE.jpg.png" alt="" onclick="openModal('myModal31');">
+                            <div class="des" onclick="openModal('myModal31');">
+                                <span>ANTA</span>
+                                <h5 class="product-title" > ANTA Kai 1 "Playoffs"</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱5500.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Court Shoes/Anta/Images/GH5 Fortress Party.jpg.png" alt="" onclick="openModal('myModal32');">
+                            <div class="des" onclick="openModal('myModal32');">
+                                <span>ANTA</span>
+                                <h5 class="product-title" >ANTA GH5</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱7000.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Lifestyle Shoes/Images/ANTA/ANTA Men Skate Culture AOYU Lifestyle Skate shoes.png" alt="" onclick="openModal('myModal33');">
+                            <div class="des" onclick="openModal('myModal33');">
+                                <span>ANTA</span>
+                                <h5 class="product-title" >Skate Culture AOYU Lifestyle</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱3079.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Lifestyle Shoes/Images/ANTA/ANTA Men High Cost Performance Street Play GZ Lifestyle X-Game Shoes.png" alt="" onclick="openModal('myModal34');">
+                            <div class="des" onclick="openModal('myModal34');">
+                                <span>ANTA</span>
+                                <h5 class="product-title" >GZ Lifestyle X-Game Shoes</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱1979.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Lifestyle Shoes/Images/ANTA/ANTA Men High Cost Performance Walker GZ Lifestyle Casual Shoes.png" alt="" onclick="openModal('myModal35');">
+                            <div class="des" onclick="openModal('myModal35');">
+                                <span>ANTA</span>
+                                <h5 class="product-title" >GZ Lifestyle Casual Shoes</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱1979.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Running Shoes/Anta/Images/ANTA Women Mach 4 Running Shoes.png" alt="" onclick="openModal('myModal36');">
+                            <div class="des" onclick="openModal('myModal36');">
+                                <span>ANTA</span>
+                                <h5 class="product-title" >Women Mach 4 Running Shoes</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱4995.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Running Shoes/Anta/Images/ANTA Men Daily Running Clouds Running Shoes.png" alt="" onclick="openModal('myModal37');">
+                            <div class="des" onclick="openModal('myModal37');">
+                                <span>ANTA</span>
+                                <h5 class="product-title" >Men Daily Running Clouds</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱3059.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Running Shoes/Anta/Images/ANTA EBuffer 4 Pro Men_s Running Shoes in Black.png" alt="" onclick="openModal('myModal38');">
+                            <div class="des" onclick="openModal('myModal38');">
+                                <span>ANTA</span>
+                                <h5 class="product-title" >EBuffer 4 Pro</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱5995.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Training Shoes/Anta/Images/ANTA Men Cross-Training Shoes.png" alt="" onclick="openModal('myModal39');">
+                            <div class="des" onclick="openModal('myModal39');">
+                                <span>ANTA</span>
+                                <h5 class="product-title" >Men Cross-Training Shoes</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱3399.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Training Shoes/Anta/Images/ANTA Men Basic Walking Cross-Training Shoes.png" alt="" onclick="openModal('myModal40');">
+                            <div class="des" onclick="openModal('myModal40');">
+                                <span>ANTA</span>
+                                <h5 class="product-title" >Walking Cross-Training Shoes</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱2395.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="converse" class="space">
+                <h2>CONVERSE</h2>
+                <p><a href="/brands/converse.html">View All</a></p> 
+                <div class="scrollmenu">
+                    <div class="pro-container">
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Court Shoes/Converse/Images/CONVERSE G4 White.png" alt="" onclick="openModal('myModal41');">
+                            <div class="des" onclick="openModal('myModal41');">
+                                <span>CONVERSE</span>
+                                <h5 class="product-title" >G4 ALL STAR BB PRO</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱10000.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Court Shoes/Converse/Images/CONVERSE PRO BB low.png" alt="" onclick="openModal('myModal42');">
+                            <div class="des" onclick="openModal('myModal42');">
+                                <span>CONVERSE</span>
+                                <h5 class="product-title" >ALLSTAR Pro BB low Solstice</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱6000.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Lifestyle Shoes/Images/CONVERSE/Chuck Taylor All Star CX EXP2.png" alt="" onclick="openModal('myModal43');">
+                            <div class="des" onclick="openModal('myModal43');">
+                                <span>CONVERSE</span>
+                                <h5 class="product-title" >Chuck Taylor All Star CX EXP2</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱6700.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Lifestyle Shoes/Images/CONVERSE/Chuck Taylor All Star Pride.png" alt="" onclick="openModal('myModal44');">
+                            <div class="des" onclick="openModal('myModal44');">
+                                <span>CONVERSE</span>
+                                <h5 class="product-title" >Chuck Taylor All Star Pride</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱6200.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Lifestyle Shoes/Images/CONVERSE/Star Player 76 Suede.png" alt="" onclick="openModal('myModal45');">
+                            <div class="des" onclick="openModal('myModal45');">
+                                <span>CONVERSE</span>
+                                <h5 class="product-title" >Star Player 76 Suede</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱5600.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Running Shoes/Converse/Images/Run Star Hike Canvas Platform Shoes (White).png" alt="" onclick="openModal('myModal46');">
+                            <div class="des" onclick="openModal('myModal46');">
+                                <span>CONVERSE</span>
+                                <h5 class="product-title" >Run Star Hike Canvas Platform</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱5290.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Running Shoes/Converse/Images/Run Star Motion CX Platform Future Utility.png" alt="" onclick="openModal('myModal47');">
+                            <div class="des" onclick="openModal('myModal47');">
+                                <span>CONVERSE</span>
+                                <h5 class="product-title" >Run Star Motion CX Platform</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱5790.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Running Shoes/Converse/Images/Run Star Legacy CX Platform Star Studded.png" alt="" onclick="openModal('myModal48');">
+                            <div class="des" onclick="openModal('myModal48');">
+                                <span>CONVERSE</span>
+                                <h5 class="product-title" >Run Star Legacy CX</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱5,500.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Training Shoes/Converse/Images/Chuck Taylor All Star Lift.png" alt="" onclick="openModal('myModal49');">
+                            <div class="des" onclick="openModal('myModal49');">
+                                <span>CONVERSE</span>
+                                <h5 class="product-title" >Chuck Taylor All Star Lift</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱3990.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+
+                        <button id="myBtn">
+                            <div class="pro" >
+                            <img class="product-img" src="/Assets/Training Shoes/Converse/Images/Converse Star Player 76 Everyday Essentials.png" alt="" onclick="openModal('myModal50');">
+                            <div class="des" onclick="openModal('myModal50');">
+                                <span>CONVERSE</span>
+                                <h5 class="product-title" >Converse Star Player 76</h5>
+                                <div class="star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <h4 class="price" >₱2994.00</h4>
+                            </div>
+                                <i class='bx bx-cart-add cart'></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nike_modals">
+            <div id="myModal1" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Court Shoes/Nike/Images/LEBRON XXI EP.jpg.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>NIKE</h2>
+                        <h4>Lebron 21</h4>
+                        <h3>₱11295.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Last time around, LeBron flipped the script on his shoe game as only the King can. The encore is even better. The LeBron XXI has a cabling system that works with Air Zoom cushioning and a light, low-to-the-ground design, giving you agile fluidity and explosiveness without excess weight. Created for your ascent and the next generation of hoopers, it's ideal for Bron-like open-floor attacks and rising towards the rim when the game's pace turns up. With its extra-durable rubber outsole, this version gives you traction for outdoor courts.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal1');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal2" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Court Shoes/Nike/Images/KD 17 ORANGE.jpg.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>NIKE</h2>
+                        <h4>KD 17</h4>
+                        <h3>₱8895.00</h3>
+                            <h4>Product Details</h4>
+                            <span>While Kevin Durant's all-timer status is already cemented, his hooper soul can't be soothed unless he's on the court, perfecting his craft. Put in the work to be great in the KD17, a shoe for gym rats and those who insist on running it back. A forefoot Air Zoom unit enhances your first step. We combined it with Nike Air cushioning to fuel full-court sprints and defensive stops that can decide games. With its extra-durable rubber outsole, this version gives you traction for outdoor courts.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal2');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal3" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Court Shoes/Nike/Images/KOBE PROTRO 8 COURT PURPLE.jpg.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>NIKE</h2>
+                        <h4>Kobe 8 Protro</h4>
+                        <h3>₱9895.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Kobe is the only player in NBA history to have two retired jerseys on the same team. He got there via unending focus on the game, and the Kobe 8 Protro "Court Purple" is inspired by his in-season flow. Numbers 8, 24, and 2—the jerseys worn by Kobe and his daughter Gianna—repeat boldly in Court Purple across the White mesh upper. The arched midfoot plate brings added support and stability, making the Kobe 8 Protro a mainstay at all levels of play. The design is finished off with an embroidered Swoosh, Kobe's signature, and his iconic "Sheath" logo (all in Court Purple) to honor his legendary mindset and continuing legacy.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal3');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal4" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Lifestyle Shoes/Images/nike/zoom-vomero-5-se-shoes-WWDBV1.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>NIKE</h2>
+                        <h4>Nike Zoom Vomero 5 SE</h4>
+                        <h3>₱8895.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The Zoom Vomero 5 SE takes early-2000s running to modern heights. A combination of breathable and durable materials stands ready for the rigours of your day, while Zoom Air cushioning delivers a smooth ride.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal4');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal5" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Lifestyle Shoes/Images/nike/air-force-1-07-lv8-shoes-chrS2D.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>NIKE</h2>
+                        <h4>Nike Air Force 1 '07 LV8</h4>
+                        <h3>₱6895.00</h3>
+                            <h4>Product Details</h4>
+                            <span>You can't stop ageing, but the Air Force 1 "Fresh" gets pretty close. Soft, textured leather helps conceal creasing and is easy to clean. The debossed branding, which replaces the woven labels, pairs with extra laces so you can eat that jam doughnut in peace. And the perforated sockliner keeps it airy and breathable. Now, there's really no reason not to rock white-on-white.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal5');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal6" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Lifestyle Shoes/Images/nike/dunk-low-retro-shoe-66RGqF.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>NIKE</h2>
+                        <h4>Nike Dunk Low Retro</h4>
+                        <h3>₱5495.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Created for the hardwood but taken to the streets, the Nike Dunk Low Retro returns with crisp overlays and original team colours. This basketball icon channels '80s vibes with premium leather in the upper that looks good and breaks in even better. Modern footwear technology helps bring the comfort into the 21st century.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal6');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal7" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Running Shoes/Nike/Images/Nike Pegasus 41 (White-Dusty Cactus-Glacier Blue-Black).jpg.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>NIKE</h2>
+                        <h4>Nike Pegasus 41</h4>
+                        <h3>₱7395.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Responsive cushioning in the Pegasus provides an energised ride for everyday road running. Experience lighter-weight energy return with dual Air Zoom units and a ReactX foam midsole. Plus, improved engineered mesh on the upper decreases weight and increases breathability.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal7');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal8" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Running Shoes/Nike/Images/Nike Vaporfly 3 (Black-Black-Oatmeal-Metallic Gold Grain).png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>NIKE</h2>
+                        <h4>Nike Vaporfly 3</h4>
+                        <h3>₱11295.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Catch 'em if you can. Giving you race-day speed to conquer any distance, the Nike Vaporfly 3 is made for the chasers, the racers and the elevated pacers who can't turn down the thrill of the pursuit. We reworked the leader of the super shoe pack and tuned the engine underneath to help you chase personal bests from a 10K to marathon. From elite runners to those new to racing, this versatile road-racing workhorse is for those who see speed as a gateway to more miles and more seemingly uncatchable highs.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal8');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal9" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Training Shoes/Nike/Images/Nike Metcon 9 AMP.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>NIKE</h2>
+                        <h4>Nike Metcon 9 AMP </h4>
+                        <h3>₱7895.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The Metcon 9 AMP enhances workout performance with a larger Hyperlift plate for stability, a secure lace-lock system, and an extended rubber wrap for durability and support during rope climbs. Its lightweight, breathable mesh ensures comfort and durability, while the dual-density midsole provides responsive cushioning. The full-rubber outsole offers traction for dynamic movements, and the breathable textile with a 3D haptic print adds flexible support and durability, making the Metcon 9 ideal for lifters, cross-trainers, and athletes.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal9');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal10" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Training Shoes/Nike/Images/Nike Free Metcon 5.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>NIKE</h2>
+                        <h4>Nike Free Metcon 5</h4>
+                        <h3>₱6895.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The Nike Free Metcon 5 combines style with functionality, featuring a breathable, sock-like upper for easy entry and ankle support. It offers forefoot flexibility for agility and a wide, stable heel for lifting, with a cushioned core and durable outer layer. Internal webbing ensures a secure midfoot fit, while Nike Free technology allows natural foot movement during dynamic exercises. Additional benefits include a molded heel clip for support, flexible webbing eyelets, and durable rubber tread for traction.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal10');">&times;</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="adidas_modals">
+
+            <div id="myModal11" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Court Shoes/Adidas/Images/AE 1 white.jpg.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ADIDAS</h2>
+                        <h4>AE 1</h4>
+                        <h3>₱5900.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Lace up in the style of one of the game's emerging superstars. These juniors' signature sneakers from adidas Basketball and Anthony Edwards are built for certified bucket getters. The combined BOOST and Lightstrike midsole is ultra-lightweight and adds outstanding energy return to your most explosive moves. A rubber outsole provides all the support you need to attack the hoop, while signature Anthony Edwards branding completes the look.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal11');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal12" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Court Shoes/Adidas/Images/Harden 7 blue.jpg.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ADIDAS</h2>
+                        <h4>Harden Volume 7</h4>
+                        <h3>₱9000.00</h3>
+                            <h4>Product Details</h4>
+                            <span>James Harden's game is all about style and inspired by his love of fashion. These signature shoes from adidas Basketball show off his unique look and interest in all things luxury, with a bold textile upper that takes its cues from puffer jackets. And because he shines on the hardwood as well as off, these trainers feature a lightweight energy-returning midsole with Lightstrike and BOOST, plus a rubber outsole that provides support on step back jumpers and ankle-breaking crossovers.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal12');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal13" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Court Shoes/Adidas/Images/TRAE brown.jpg.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ADIDAS</h2>
+                        <h4>Trae young 3</h4>
+                        <h3>₱9000.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Get ready for what's next. This iteration of the signature shoes from Trae Young and adidas Basketball is all about the future of the game. Celebrating Trae's unique look, crowd-pleasing bravado and expressive, futuristic style of play, these shoes are built for optimised motion and stability, two elements of Trae's game that have elevated him to superstar status. The midsole ensures your most explosive moves can be done at top speed while a rubber outsole adds support on hard plants and cuts.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal13');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal14" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Lifestyle Shoes/Images/adidas/Samba_OG_Shoes_Black_B75807_06_standard.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ADIDAS</h2>
+                        <h4>SAMBA OG SHOES</h4>
+                        <h3>₱6800.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Born on the pitch, the Samba is a timeless icon of street style. This silhouette stays true to its legacy with a tasteful, low-profile, soft leather upper, suede overlays and gum sole, making it a staple in everyone's closet - on and off the pitch.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal14');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal15" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Lifestyle Shoes/Images/adidas/Advantage_Base_2.0_Shoes_White_IG9189_06_standard.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ADIDAS</h2>
+                        <h4>ADVANTAGE BASE 2.0 SHOES</h4>
+                        <h3>₱3300.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Inspired by the court. Reimagined for casual wear. These adidas sneakers will take you effortlessly through your day, from a morning walk to dinner with friends. A soft lining keeps your foot wrapped in comfort while the rubber outsole gives you a grip on any surface. Perforated 3-Stripes give a subtle nod to the adidas DNA.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal15');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal16" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Lifestyle Shoes/Images/adidas/Run_60s_3.0_Shoes_White_IE3830_06_standard.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ADIDAS</h2>
+                        <h4>RUN 60S 3.0 SHOES</h4>
+                        <h3>₱3000.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Built for speed. Re-envisioned for everyday wear. These adidas sneakers translate from the running track to the street, with a lightweight upper that lets you roam comfortably mile after mile. An EVA midsole provides responsive cushioning, absorbing the impact of each stride. The rubber outsole grips the ground to propel you forward, whatever pace you're moving at.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal16');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal17" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Running Shoes/Adidas/Images/Adizero_Boston_12_Shoes_Blue.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ADIDAS</h2>
+                        <h4>ADIZERO BOSTON 12 SHOES</h4>
+                        <h3>₱8000.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The Boston Marathon is a race. But it's also a goal, and a training plan and all the days it stays on your mind before the big one. The Adizero Boston 12 Shoes are built for mid- to long-distance running. They bring a race-day feel to training with a propulsive feel that comes from the glass-fibre infused ENERGYRODS 2.0, which limit energy loss underfoot. They're fast, but that does not come at the cost of durability — the midsole layers ultra-light LIGHTSTRIKE PRO cushioning with a new version of durable LIGHTSTRIKE 2.0 EVA.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal17');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal18" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Running Shoes/Adidas/Images/Duramo_Speed_Shoes_Red.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ADIDAS</h2>
+                        <h4>DURAMO SPEED SHOES</h4>
+                        <h3>₱4500.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Training to achieve a new personal best, or just trying to make it to the bus stop on time? Whatever your goal, wherever you're going, the adidas Duramo SL Shoes put some snap into your step with LIGHTMOTION cushioning that is light, responsive and sculpted for comfort. The airy mesh upper keeps your feet feeling cool and dry no matter how much of a sweat you're working up.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal18');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal19" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Training Shoes/Adidas/Images/RAPIDMOVE ADV TRAINER.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ADIDAS</h2>
+                        <h4>RAPIDMOVE ADV TRAINER</h4>
+                        <h3>₱6000.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The RAPIDMOVE ADV TRAINER by Adidas is designed for HIIT and agile workouts, featuring an engineered knit upper with strategic support, lightweight and responsive Lightstrike cushioning, and an asymmetrical Torsion System for stability during quick cuts and multidirectional moves. Made with at least 50% recycled materials, these shoes contribute to Adidas' efforts to help end plastic waste..</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal19');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal20" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Training Shoes/Adidas/Images/STRUTTER SHOES.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ADIDAS</h2>
+                        <h4>STRUTTER SHOES</h4>
+                        <h3>₱3500.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The STRUTTER SHOES by Adidas offer a chunky design ideal for all-day comfort, featuring a smooth leather upper with cutouts, overlays, and signature 3-Stripes. They are built with a high-profile sculpted midsole and a grippy outsole, delivering a stylish nod to classic "dad shoes" while ensuring durability and support for an active day.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal20');">&times;</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="puma_modals">
+            <div id="myModal21" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Court Shoes/PUMA/Images/MELO 1.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>PUMA</h2>
+                        <h4>MB1</h4>
+                        <h3>₱7042.00</h3>
+                            <h4>Product Details</h4>
+                            <span>LaMelo Ball is Not From Here. His personal style. His playing style. His route to the league. They’re all one-of-one. Let’s face it. He was never going to have a toned-down signature model, but the MB.01 is on a whole new level – especially this Disco Lo version. It’s bold. It’s attention-grabbing. It’s Melo in shoe form. If you were going to ball in space, it would be in this shoe. And just like Melo, it’s unlike anything the league’s seen before. You could say it’s Not From Here.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal21');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal22" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Court Shoes/PUMA/Images/Schroder.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>PUMA</h2>
+                        <h4>SCHRODER ALL PRO NITRO M</h4>
+                        <h3>₱8800.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The Schröder All-Pro NITRO™ Basketball Shoe combines PUMA technology with sophisticated design. NITRO™ technology provides responsive and lightweight cushioning, giving you an extra boost with every possession. The technical mesh upper ensures optimal breathability. Whether you're a professional athlete or a basketball enthusiast, the All-Pro NITRO™ gives you the perfect blend of comfort, style and performance to show them who's boss. Just ask Dennis Schröder.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal22');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal23" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Court Shoes/PUMA/Images/Rj BARRET.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>PUMA</h2>
+                        <h4>ALL-PRO NITRO RJ BARRET</h4>
+                        <h3>₱8200.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Dominate the court in RJ Barrett's signature basketball shoe. An engineered mesh upper and full-length NITROFOAM™ tooling unleash your speed and power. Take flight for monster dunks or Euro step past defenders. Built for Barrett's explosive style of play, the All-Pro NITRO™ will make you unstoppable.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal23');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal24" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Lifestyle Shoes/Images/puma/Easy-Rider-Vintage-Sneakers.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>PUMA</h2>
+                        <h4>Easy Rider Vintage Sneakers</h4>
+                        <h3>₱6500.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The PUMA Easy Rider was born in the late ‘70s, when running made its move from the track to the streets. Today it's back with its classic slim profile and vintage vibes intact. This version, featuring a textile base and suede leather overlays, is sure to become your go-to for bringing a touch of easy, retro-style to everyday looks.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal24');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal25" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Lifestyle Shoes/Images/puma/RBD-Game-Low-Sneakers.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>PUMA</h2>
+                        <h4>RBD Game Low Sneakers</h4>
+                        <h3>₱2700.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Step back in time with the PUMA RBD Game Low sneakers, the perfect blend of retro style and modern comfort. These low cut trainers feature a sleek design with the iconic PUMA logo, giving you a classic look that never goes out of style. The cushioned footbed provides all-day comfort, while the durable rubber outsole ensures traction and stability with every step. Whether you're hitting the streets or just kicking back with friends, the PUMA RBD Game Low sneakers are sure to elevate your style game. Walk with confidence and make a statement in these timeless kicks.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal25');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal26" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Lifestyle Shoes/Images/puma/Palermo-Leather-Sneakers-Unisex.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>PUMA</h2>
+                        <h4>Palermo Leather Sneakers Unisex</h4>
+                        <h3>₱6000.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Straight from the archives, it’s the PUMA Palermo. This classic terrace shoe builds on PUMA’s heritage within football, while appealing to today’s sneakerheads and fashion mavens. This execution features a leather base with a suede Formstrip and overlays.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal26');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal27" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Running Shoes/PUMA/Images/ForeverRun-NITRO-Running-Shoes-_Cherry-Tomato-PUMA-Black.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>PUMA</h2>
+                        <h4>ForeverRun NITRO Running Shoes</h4>
+                        <h3>₱6240.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The ForeverRUN NITRO dawns a new era of support and guidance for all runners, providing the softness of a full NITRO™ midsole without compromising stability. It features a newly developed NITRO™ midsole with two different densities – a softer core with a firmer rim – and an asymmetrical heel counter to hold the foot in place through every stride. The theme also continues on the outsole, with a wider medial rubber segment that stabilises late-stage pronation. In short, it's the perfect blend of support and cushion.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal27');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal28" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Running Shoes/PUMA/Images/Deviate-NITRO™-2-Men_s-Running-Shoes-_Neon-Citrus.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>PUMA</h2>
+                        <h4>Deviate NITRO™ 2 Running Shoes</h4>
+                        <h3>₱8800.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The Deviate NITRO™ 2 – just like v1, only improved. It’s the max cushion, max performance running shoe that makes going faster even easier. The update includes NITROFOAM™ Elite for improved responsiveness, a reworked collar to reduce heel slip, and a lighter, asymmetrical base that works better with your body across all distances – be it short runs, marathons, and even ultras.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal28');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal29" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Training Shoes/PUMA/Images/Puma Pure XT Moto.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>PUMA</h2>
+                        <h4>Pure XT Moto </h4>
+                        <h3>₱3000.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The Pure XT Moto by PUMA is a versatile training shoe designed for high-intensity workouts, featuring a ProFoam midsole for lightweight responsiveness and a PUMAGRIP outsole for all-surface traction and durability. Its low boot design offers a sleek look, while the unique 3D graphic print on the upper adds style. Complete with the iconic PUMA Formstrip on the lateral sides and PUMA branding on the tongue, heel, and outsole, this shoe combines performance and style seamlessly.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal29');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal30" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Training Shoes/PUMA/Images/Puma PWRFrame TR 2 Elektro Summer.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>PUMA</h2>
+                        <h4>PWRFrame TR 2</h4>
+                        <h3>₱3790.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The PUMA PWRFRAME TR 2 is a high-performance training shoe designed for stability and support during explosive movements. It features an improved upper, PWRFRAME technology for forefoot support, PROFOAM for lightweight cushioning, and PUMAGRIP for all-surface traction. The PWRTAPE reinforces the upper for added durability, while the responsive midsole and textile upper ensure comfort and performance. Complete with the PUMA Formstrip on the medial and lateral sides, this shoe is crafted from a mix of synthetic and textile materials for optimal functionality.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal30');">&times;</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="anta_modals">
+
+            <div id="myModal31" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Court Shoes/Anta/Images/KAI WHITE.jpg.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ANTA</h2>
+                        <h4>ANTA KAI 1</h4>
+                        <h3>₱5500.00</h3>
+                            <h4>Product Details</h4>
+                            <span>ANTA KAI 1 "Playoffs", the fourth colorway of Kyrie Irving's first signature ANTA shoe. Focus creates champions. Wear the ANTA KAI 1 "Playoffs", dominate the court, and walk away a winner.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal31');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal32" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Court Shoes/Anta/Images/GH5 Fortress Party.jpg.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ANTA</h2>
+                        <h4>ANTA GH5</h4>
+                        <h3>₱7000.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Step into Gordon Hayward's latest signature shoe, blending his basketball passion with gaming love. With unique TPU carbon plates and outsole texture, the ANTA GH5 provides extra protection and enhances lateral movement to level up your game.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal32');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal33" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Lifestyle Shoes/Images/ANTA/ANTA Men Skate Culture AOYU Lifestyle Skate shoes.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ANTA</h2>
+                        <h4>ANTA Men Skate Culture AOYU Lifestyle Skate Shoes</h4>
+                        <h3>₱3079.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The ANTA Men Skate Culture AOYU Lifestyle Skate Shoes feature a solid shade faux leather upper with a contrasting logo, providing a sleek and stylish look. Designed with a comfortable textile insole and a durable rubber outsole, they ensure all-day comfort and traction. The lace-up fastening and rounded toe offer a secure and classic fit, making them a versatile addition to any casual wardrobe.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal33');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal34" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Lifestyle Shoes/Images/ANTA/ANTA Men High Cost Performance Street Play GZ Lifestyle X-Game Shoes.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ANTA</h2>
+                        <h4>ANTA Men High Cost Performance Street Play GZ Lifestyle X-Game Shoes</h4>
+                        <h3>₱1979.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The ANTA Men High Cost Performance Street Play GZ Lifestyle X-Game Shoes are perfect for everyday wear, featuring a breathable mesh upper, comfortable textile insole, and durable rubber outsole. With a lace-up fastening and round toe design, these shoes offer both style and functionality for a versatile lifestyle.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal34');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal35" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Lifestyle Shoes/Images/ANTA/ANTA Men High Cost Performance Walker GZ Lifestyle Casual Shoes.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ANTA</h2>
+                        <h4>ANTA Men High Cost Performance Walker GZ Lifestyle Casual Shoes</h4>
+                        <h3>₱1979.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The ANTA Men High Cost Performance Walker GZ Lifestyle Casual Shoes are ideal for basketball, featuring a logo detail on a knitted textile upper for breathability and style. With a comfortable textile inner and durable rubber outsole, these shoes ensure excellent performance on the court. The lace-up fastening and round toecap provide a secure fit and classic look.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal35');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal36" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Running Shoes/Anta/Images/ANTA Women Mach 4 Running Shoes.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ANTA</h2>
+                        <h4>ANTA Women Mach 4 Running Shoes</h4>
+                        <h3>₱4995.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The ANTA Women Mach 4 Running Shoes feature a sleek solid shade faux leather upper with a contrasting logo for a stylish look. Designed with a polyurethane upper, a comfortable textile insole, and a durable rubber outsole, these sneakers ensure excellent performance and comfort. The lace-up fastening provides a secure fit, making them perfect for running and everyday wear.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal36');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal37" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Running Shoes/Anta/Images/ANTA Men Daily Running Clouds Running Shoes.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ANTA</h2>
+                        <h4>ANTA Men Daily Running Clouds Running Shoes</h4>
+                        <h3>₱3059.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The ANTA Men Daily Running Clouds Running Shoes are perfect for running, featuring a solid shade faux leather upper with a contrasting logo for a sleek appearance. These sneakers come with a polyurethane upper, a comfortable textile insole, and a durable rubber outsole for excellent performance and support. The lace-up fastening and rounded toe ensure a secure and comfortable fit, making them ideal for daily runs.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal37');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal38" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Running Shoes/Anta/Images/ANTA EBuffer 4 Pro Men_s Running Shoes in Black.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ANTA</h2>
+                        <h4>ANTA EBuffer 4 Pro Men's Running Shoes in Black</h4>
+                        <h3>₱5995.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The ANTA EBuffer 4 Pro Men's Running Shoes in Black are ideal for running, featuring a solid shade faux leather upper with a contrasting logo for a sleek and modern look. Equipped with a durable polyurethane upper, a comfortable textile insole, and a sturdy rubber outsole, these sneakers provide excellent support and performance. The lace-up fastening and rounded toe ensure a secure and comfortable fit, making them perfect for daily runs.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal38');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal39" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Training Shoes/Anta/Images/ANTA Men Cross-Training Shoes.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ANTA</h2>
+                        <h4>ANTA Men Cross-Training Shoes</h4>
+                        <h3>₱3399.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The ANTA Men Cross-Training Shoes offer optimal performance for training sessions. Crafted with solid shade faux leather and featuring a contrast logo, these shoes boast a polyurethane upper for durability and a textile insole for comfort. The rubber outsole provides traction, while the lace-up fastening and rounded toe ensure a secure fit and ample room for movement, making them an ideal choice for intense workout sessions.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal39');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal40" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Training Shoes/Anta/Images/ANTA Men Basic Walking Cross-Training Shoes.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>ANTA</h2>
+                        <h4>ANTA Men Basic Walking Cross-Training Shoes</h4>
+                        <h3>₱2395.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The ANTA Men Basic Walking Cross-Training Shoes deliver top-notch performance for all your training needs. Featuring a sleek faux leather design with a contrasting logo, these shoes are built with a durable polyurethane upper and a comfortable textile insole. The rubber outsole ensures excellent traction, and the lace-up closure along with the rounded toe provides a secure and spacious fit. Perfect for rigorous workouts, these shoes are an essential choice for any training regimen.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal40');">&times;</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="converse_modals">
+
+            <div id="myModal41" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Court Shoes/Converse/Images/CONVERSE G4 White.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>CONVERSE</h2>
+                        <h4>CONVERSE G4 ALL STAR BB PRO</h4>
+                        <h3>₱10000.00</h3>
+                            <h4>Product Details</h4>
+                            <span>First seen in promotional material for Draymond Green’s signing with Converse, the G4‘s two low-top options in this collection are inspired by daytime and nighttime play. The former boasts a “Photon Dust” base featuring “Amethyst Grey” across the laces, collar, and heel. By comparison, the second G4 is predominantly clad in “Black” – though “Solar Red” and “Fresh Mint” interrupt the nighttime scheme at the collar and outsole, respectively, à la Nike Air Yeezy 2. While varied in color palettes, both pairs deliver the performance benefits of Nike React foam and Nike Zoom Air technologies.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal41');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal42" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Court Shoes/Converse/Images/CONVERSE PRO BB low.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>CONVERSE</h2>
+                        <h4>ALLSTAR Pro BB low Solstice</h4>
+                        <h3>₱6000.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The Kelly Oubre Jr.-endorsed All Star Pro BB arrives in low and mid-top versions via Converse’s Solstice Collection. Each silhouette – co-created with Eric Avar of the Nike Kobe 6 – features semi-transparent, Quad-axial woven uppers. The shorter trim boasts a “University Blue/White” arrangement, while its taller counterpart throws “Game Royal/Total Orange” into the mix. Both, however, ostensibly nod to Michael Jordan’s use of the Converse Fastbreaks throughout his time at the University of North Carolina.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal42');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal43" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Lifestyle Shoes/Images/CONVERSE/Chuck Taylor All Star CX EXP2.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>CONVERSE</h2>
+                        <h4>Chuck Taylor All Star CX EXP2</h4>
+                        <h3>₱6700.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The Chuck Taylor All Star CX EXP2 combines utility-first design with high-top versatility, ideal for stepping beyond boundaries into exploration. Crafted from heavy canvas, these sneakers offer streetwise durability, complemented by next-level cushioning that provides just the right amount of softness to this rugged style. Built for comfort and exploration, they're a standout choice for urban adventurers.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal43');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal44" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Lifestyle Shoes/Images/CONVERSE/Chuck Taylor All Star Pride.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>CONVERSE</h2>
+                        <h4>Chuck Taylor All Star Pride</h4>
+                        <h3>₱6200.00</h3>
+                            <h4>Product Details</h4>
+                            <span>
+                                The Chuck Taylor All Star Pride blends utilitarian design with the versatility of a high-top, perfect for those ready to venture beyond conventional limits. Crafted from robust canvas, these sneakers boast exceptional durability for urban settings, enhanced by advanced cushioning that strikes a perfect balance of comfort and rugged charm. Designed with comfort and exploration in mind, they stand out as an excellent choice for city explorers and trendsetters alike.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal44');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal45" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Lifestyle Shoes/Images/CONVERSE/Star Player 76 Suede.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>CONVERSE</h2>
+                        <h4>Star Player 76 Suede</h4>
+                        <h3>₱5600.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The Star Player 76 Suede epitomizes a fusion of functional design and high-top adaptability, ideal for individuals eager to surpass conventional boundaries. Constructed from durable suede, these sneakers guarantee enduring resilience in urban environments, accompanied by innovative cushioning that achieves an ideal blend of comfort and robust appeal. Engineered with both comfort and exploration in focus, they emerge as a compelling option for urban adventurers and style influencers alike.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal45');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal46" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Running Shoes/Converse/Images/Run Star Hike Canvas Platform Shoes (White).png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>CONVERSE</h2>
+                        <h4>Run Star Hike Canvas Platform Shoes</h4>
+                        <h3>₱5290.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The iconic Converse Chuck Taylor All Star high top gets reimagined in the Run Star Hike. Lace-up canvas keeps it classic from the front, while a contrast-color star on the heel lets ‘em know what’s new. Colorblocking draws attention to the platform midsole and statement, saw-toot outsole. Look again.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal46');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal47" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Running Shoes/Converse/Images/Run Star Motion CX Platform Future Utility.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>CONVERSE</h2>
+                        <h4>Run Star Motion CX Platform Canvas</h4>
+                        <h3>₱5790.00</h3>
+                            <h4>Product Details</h4>
+                            <span>Forget what you knew about form. The Run Star Motion takes classic Converse DNA and pairs it with an ultra-modern, innovative midsole to completely redefine platform style. The fluid lines you saw on court in the early 2000s come through the platform midsole, blending sport with high fashion. This expressive, lugged base is fused with an organic cotton canvas upper that borrows the same stitching, laces, and vintage inner tongue logo as the iconic Chuck 70. All supported by a CX sockliner and CX foam midsole for lightweight, maximum comfort.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal47');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal48" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Running Shoes/Converse/Images/Run Star Legacy CX Platform Star Studded.png" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>CONVERSE</h2>
+                        <h4>Run Star Legacy CX</h4>
+                        <h3>₱5790.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The latest iteration of the best-selling Run Star Hike, the Run Star Legacy CX mixes bold platform styling with premium comfort. A lightweight CX midsole and sockliner keep you light on your feet, while distorted Chuck Taylor design elements keep them guessing. A winged tongue and heel bumper allow for easy on and off, so nothing can slow you down.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal48');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal49" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Training Shoes/Converse/Images/Chuck Taylor All Star Lift.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>CONVERSE</h2>
+                        <h4>Chuck Taylor All Star Lift</h4>
+                        <h3>₱3990.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The Chuck Taylor All Star Lift platform canvas high top sneakers, inspired by iconic '90s girl bands, feature an elevated double-stacked sole for added height and a lace-up style for an adjustable fit. They come with the classic star ankle patch, offering a versatile look that can be refined or edgy. Note that sizes may vary by 1-2cm due to manufacturing processes, and colors may differ slightly due to monitor displays.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal49');">&times;</span>
+                </div>
+            </div>
+
+            <div id="myModal50" class="modal"> 
+                <div id="prodetails" class="section-p1 modal-content">
+                    <div class="single-pro-image">
+                        <img src="/Assets/Training Shoes/Converse/Images/Converse Star Player 76 Everyday Essentials.png" width="100%" id="MainImg">.
+                    </div>
+        
+                    <div class="single-pro-details">
+                        <h2>CONVERSE</h2>
+                        <h4>Converse Star Player 76 Everyday Essentials</h4>
+                        <h3>₱2994.00</h3>
+                            <h4>Product Details</h4>
+                            <span>The Converse Star Player 76 Everyday Essentials are low-top shoes designed for cooler weather, featuring a canvas upper, leather tongue label with vintage logo, screenprinted and embossed Star Chevron, and classic Chuck Taylor toecap and diamond-texture bumper. With OrthoLite cushioning for all-day comfort, these shoes embrace winter in style. Note that sizes may vary by 1-2cm due to manufacturing, and colors may differ slightly due to monitor displays.</span>
+                    </div>
+                    <span class="close" onclick="closeModal('myModal50');">&times;</span>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="section-p1">
+            <div class="col">
+                <h4>Contact</h4>
+                <p><a href="https://maps.app.goo.gl/b6JQZ9Fj8XVAkYp58"><strong>Address: &nbsp</strong>Soldiers Hills IV, Molino VI, Bacoor City, Cavite </a></p>
+                <p><strong>Phone:  &nbsp</strong>+63-977-6261-933</p>
+                <p><strong>Availability:  &nbsp</strong>24 Hours </p>
+                <div class="follow">
+                    <h4>Follow us:</h4>
+                    <div class="icon">
+                        <a href="https://www.facebook.com/profile.php?id=61560610323428&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2Fshopatosph%3Ft%3DHHP6y8D6a96kg1DgfqbypQ%26s%3D07%26fbclid%3DIwZXh0bgNhZW0CMTAAAR0f0zwcHH6tFmozUAgVKH35w1P8Ms4lrUwU3MJIk353B7KikjfGy4D178s_aem_8gjU4EBOaN8D3UiZzVQ4lg&h=AT1DzvAT0SvQAIqd_V7VlLIlAZ_F_NaDpV6XIojMJJPT0qZk9Ud7ILlyf2wLuZdMyoJMHE4IOwp12qxYH1O7ricx6PrHNrdY8Li1MGc7rTmeiQxlrxsgaPWQdF6OC2RJjv91tA"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/shopatosph2024/?igsh=NXNuazFhM2g2ZmU3&fbclid=IwZXh0bgNhZW0CMTAAAR22Rh5ynBffgQoHKi4JFoWXBYzs2qAGf_HKLr9_MMgo_7e4fKTKXSLt_Fk_aem_Od-eGRrLgTGRJWiMoo3djg"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About</h4>
+                <a href="/about.html">About Us</a>
+
+                <button id="myBtn">
+                    <div class="pro" >
+                    <div class="des" onclick="openModal('myModalfooter1');">
+                        <a class="col" href="#">Privacy Policy</a>     
+                    </div>
+                    <div class="des" onclick="openModal('myModalfooter2');">
+                        <a class="col" href="#">Terms and Condition</a>
+                    </div>
+                </button>
+
+                <section id="nike_modals">
+                    <div id="myModalfooter1" class="modal"> 
+                        <div id="prodetails" class="section-p1 modal-content">
+                            <div class="single-pro-details1">
+                                <h2 style="text-align: center;" id="privacyPolicy">Privacy Policy</h2>
+                                <br>
+                
+                                <p>Effective Date: 2024-2025</p>
+                
+                                <h3>1. Introduction</h3><br>
+                                <p>Welcome to SHOPatos! We value your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and share information about you when you visit our website and purchase our products.</p>                  
+                                <h3>2. Information We Collect</h3><br>
+                                <p>We may collect the following types of information:</p>
+                                
+                                <p>Personal Information: Name, email address, phone number, shipping address, and payment information.</p>
+                                <p>Non-Personal Information: Browser type, IP address, pages visited, and other anonymous data.</p>
+                                
+                                <h3>3. How We Use Your Information</h3><br>
+                                <p>We use your information to:</p>
+                                <ul>
+                                    <li>Process and fulfill your orders</li>
+                                    <li>Provide customer support</li>
+                                    <li>Send updates and promotional offers</li>
+                                    <li>Improve our website and services</li>
+                                </ul>
+                                
+                                <h3>4. Sharing Your Information</h3><br>
+                                <p>We do not sell or rent your personal information to third parties. However, we may share your information with trusted partners to:</p>
+                                <ul>
+                                    <li>Process payments</li>
+                                    <li>Deliver your orders</li>
+                                    <li>Send marketing communications</li>
+                                    <li>Comply with legal obligations</li>
+                                </ul>
+                                
+                                <h3>5. Cookies and Tracking Technologies</h3><br>
+                                <p>We use cookies and similar tracking technologies to enhance your browsing experience and gather information about how you use our website. You can control cookies through your browser settings.</p>
+                                
+                                <h3>6. Data Security</h3><br>
+                                <p>We implement security measures to protect your information from unauthorized access, alteration, or disclosure. However, no method of transmission over the Internet or electronic <b>storage is 100% secure.</b></p>
+                                
+                                <h3>7. Your Rights</h3><br>
+                                <p>You have the right to:</p>
+                                <p></p>
+                                <ul>
+                                    <li>Access the personal data we hold about you</li>
+                                    <li>Request corrections to your personal data</li>
+                                    <li>Request deletion of your personal data</li>
+                                    <li>Opt-out of marketing communications</li>
+                                </ul>
+                                
+                                <h3>8. Changes to This Privacy Policy</h3><br>
+                                <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on our website with a new effective date.</p>
+                                
+                                <h3>9. Contact Us</h3><br>
+                                <p>If you have any questions or concerns about this privacy policy, please contact us at:</p>
+                                <p> <strong>Email:</strong> shopatos14344@gmail.com</p>
+                                <p> <strong>Address:</strong> Soldiers Hills IV, Molino VI, Bacoor City, Cavite</p>
+                            </div>
+                            <span class="close" onclick="closeModal('myModalfooter1');">&times;</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="terms_conditions">
+                    <div id="myModalfooter2" class="modal"> 
+                        <div id="prodetails" class="section-p1 modal-content">
+                            <div class="single-pro-details1">
+                                <h2 style="text-align: center; " id="termsCondition">Terms and Conditions</h2>
+                                <br>
+                
+                                <p>Effective Date: 2024-2025</p>
+                
+                                <h3>1. Introduction</h3><br>
+                                <p>Welcome to SHOPatos! These terms and conditions outline the rules and regulations for the use of SHOPatos' website and the purchase of products from our store.</p>
+                
+                                <h3>2. Acceptance of Terms</h3><br>
+                                <p>By accessing this website and purchasing our products, you agree to comply with and be bound by these terms and conditions. If you do not agree with any part of these terms, you must not use our website or services.</p>
+                
+                                <h3>3. Products and Services</h3><br>
+                                <p>SHOPatos offers a variety of shoes across different categories. All products are subject to availability and we reserve the right to limit the quantities of any products or services that we offer. We also reserve the right to discontinue any product at any time.</p>
+                
+                                <h3>4. Pricing and Payment</h3><br>
+                                <p>All prices listed on our website are in [Your Currency] and are subject to change without notice. We accept various forms of payment and you agree to provide current, complete, and accurate purchase and account information for all purchases made at our store.</p>
+                
+                                <h3>5. Shipping and Delivery</h3><br>
+                                <p>We will make every effort to ensure that your products are delivered within the estimated delivery time. However, we are not responsible for delays caused by unforeseen circumstances beyond our control. Shipping costs are non-refundable.</p>
+                
+                                <h3>6. Returns and Refunds</h3><br>
+                                <p>Our return policy allows you to return products within [Number of Days] days of receiving your order. To be eligible for a return, your item must be unused and in the same condition that you received it. Please refer to our return policy page for more details.</p>
+                
+                                <h3>7. Intellectual Property</h3><br>
+                                <p>All content included on this site, such as text, graphics, logos, images, and software, is the property of SHOPatos or its content suppliers and is protected by international copyright laws. Unauthorized use of any content on this site is strictly prohibited.</p>
+                
+                                <h3>8. Limitation of Liability</h3><br>
+                                <p>SHOPatos shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with the use of our website or the purchase of our products. Our liability is limited to the maximum extent permitted by law.</p>
+                
+                                <h3>9. Governing Law</h3><br>
+                                <p>These terms and conditions are governed by and construed in accordance with the laws of [Your Country/State], and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p>
+                
+                                <h3>10. Changes to Terms and Conditions</h3><br>
+                                <p>We reserve the right to update or modify these terms and conditions at any time without prior notice. Your continued use of our website and services constitutes your acceptance of the new terms.</p>
+                
+                                <h3>11. Contact Us</h3><br>
+                                <p>If you have any questions or concerns about these terms and conditions, please contact us at:</p>
+                                <p> <strong>Email:</strong> shopatos14344@gmail.com</p>
+                                <p> <strong>Address:</strong> Soldiers Hills IV, Molino VI, Bacoor City, Cavite</p>
+                            </div>
+                            <span class="close" onclick="closeModal('myModalfooter2');">&times;</span>
+                        </div>
+                    </div>
+                </section>
+             <a href="/contact.html">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="dashboard/index.html">Dashboard</a>
+                <a href="login_registration/login.html">Logout</a>
+            </div>
+
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <a href="https://www.apple.com/app-store/"><img src="img/pay/app.jpg" alt=""></a>
+                    <a href="https://play.google.com/store/games?device=windows"><img src="img/pay/play.jpg" alt=""></a>
+                </div>
+                
+                <p>Secured Payment Gateways</p>
+                <div class="row">
+                    <a href="https://www.gcash.com/"><img src="Assets/01-1.png" alt=""></a>
+                    <a href="https://www.maya.ph/"><img src="Assets/Paymaya-logo.jpg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>@ 2024, SHOPatos, Inc.</p>
+            </div>
+
+        </footer>   
+
+        <script src="script.js"></script>
+        <script>
+            var MainImg = document.getElementById("MainImg");
+            var smallimg = document.getElementsByClassName("small-img");
+
+            smallimg[0].onclick = function(){
+                MainImg.src = smallimg[0].src;
+            }
+            smallimg[1].onclick = function(){
+                MainImg.src = smallimg[1].src;
+            }
+            smallimg[2].onclick = function(){
+                MainImg.src = smallimg[2].src;
+            }
+            smallimg[3].onclick = function(){
+                MainImg.src = smallimg[3].src;
+            }
+        </script>
+    </body>
+
+</html>
